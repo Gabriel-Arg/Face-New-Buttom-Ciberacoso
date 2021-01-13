@@ -1,84 +1,154 @@
 <!DOCTYPE html>
-
-<html lang="es">    <!--DETERMINA QUE EL IDIOMA BASE ES EL ESPAÑOL-->
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">  <!--DEFINE EL CONJUNTO DE CARACTERES TIPICOS DEL IDIOMA ESPAÑOL-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  <!-- Meta: para que la página sea RESPONSIVE -->
-    <meta name="keywords" content="facebook, botón de reacción, ciberseguridad, programación, css, html, plataforma39a, argentina"> <!-- Meta: PALABRAS CLAVES -->
-    <meta name="author" content="Gabriel Díaz">
-    <meta name="description" content="Emulamos la interfaz de facebook y le agregamos un botón con una nueva reacción contra el acoso">
-    <title> Reacción contra el acoso </title>             <!-- TITULO EN LA PESTAÑA DEL NAVEGADOR -->
-    <link rel="icon" href="/img/iconoFace.png">  <!-- ICONO DE LA PESTAÑA DEL NAVEGADOR -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios Facebook</title>
+    <link rel="stylesheet" href="./css/estilo-home.css">
 
-    <!-- GOOGLE FONTS -->
+    <!-- **********Estilo de Fuentes******************** -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 
-    <!-- BOOTSTRAP-->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <!-- ***************Iconos************************ -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
     
-    <!-- FONTAWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-
-    <!-- ENLACE A MI HOJA DE ESTILO EXTERNO CSS -->
-    <link rel="stylesheet" href="/css/estilo-home.css">   
-
-    <style>
-        
-    </style>
-    <!--ESTILO INTERNO-->
-
 </head>
-
 <body>
-<!-- POR FAVOR DEJAR COMENTADO CADA SECCIÓN O PARTE DE LA PÁGINA PARA MAYOR ORDEN -->
-<!-- EN CASO DE DEJAR COMENTADO UNA PORCIÓN DE CODIGO, UNA VEZ QUE CREAS QUE YA NO LO USARÁS
-POR FAVOR BORRARLO PARA NO ACUMULAR CODIGO BASURA--------------------------------------- -->
-<!-- NO DEJAR MÁS DE UNA LINEA DE CODÍGO VACIA -->
-<!-- EN CASO DE SER NECESARIO CREAR OTRAS HOJAS DE ESTILO CSS APARA SECCIONES EN PARTICULAR -->
+    <!--Contenedor Principal-->
+    <main class="comentarios-container">
+        <h5>Ver 18 comentarios <a href="www.facebook.com"></a></h5>
+        <ul id="lista-comentarios" class="lista-comentarios"> <!--Lista-->
+            <li>
+                <article class="comentario-main">  <!--Comentario principal-->
+                       
+                       <!--Imagen del comentario principal-->
+                       <figure class="comentario-imagen"><a href="https://www.facebook.com"><img src="./img/imagen_1.jpg" alt=""></figure></a>
 
-<!-- ----------------------------------SECCION 1 HEADER-------------------------------------------- -->
+                       <!--Imagen del logo conectado para comentario principal-->
+                       <article class="conectado">
+                           <figure><img src="./img/conectado.jpg" alt=""></figure>
+                       </article>
 
-    <header>
-        <div class="foto-perfil">Foto</div>
-        <div class="nombre-usuario">Nombre Usuario</div>
-        <div class="menu">Menú</div>
-    </header>
+                        <!-- Contenedor de Comentario-->
+                    <section class="comentario-box">
+                        <article class="contenido-comentario">
+                            <h6 class="nombre-comentario author"><a href="https://www.facebook.com">José Luis Martinez</h6></a><br>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, maiores iusto! Quod, minima in quaerat minus commodi possimus temporibus culpa magnam blanditiis quibusdam voluptate laborum officia eligendi, eius reprehenderit corrupti.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, tempora? Totam repellendus sequi est, alias ipsum eius harum, laborum sapiente quos unde minus quod, aut voluptatum fugiat assumenda minima nihil.
+                        </article>
 
-<!-------------------------------------SECCION 2 POST-------------------------------------------- -->
+                        <!--footer del comentario-->
+                        <article class="comentario-footer">
+                            <span>15 min</span>
+                            <a class="me_gusta" href="#">Me gusta</a>
+                            <a class="responder" href="#">Responder</a>
+                            <i class="fas fa-reply"></i>
+                            <i class="fas fa-heart"></i>
+                            <i class="far fa-hand-point-right"><p class="like">2</p></i>
+                            <i class="far fa-grin-hearts"></i>
+                            <i class="far fa-grin-wink"><p class="like">2</p></i>
+                        </article>
+                    </section>
+                </article>
 
-    <section class="post">
-        <div class="post-comentario"> Soy el tipo de mujer que si quiero la luna me la bajo yo solita. </div>
-        <div class="post-foto">
-            <img src="/img/post-02.jpg" alt="Foto de la chica">
-        </div>
-        <div class="post-reacciones">
-            <img src="" alt="">
-            <p style="margin: 0px;"> </p>Tú, Marcos y 35 personas más </p>
-            <p style="margin: 0px;"> 21 comentarios </p>
-        </div>
-    </section>
+                <!--Respuesta de los comenetarios-->
+                <ul class="lista-comentarios reply-list">
+                    <li>
+                        <figure class="comentario-imagen"><a href="https://www.facebook.com"><img src="./img/imagen_2.jpg" alt=""></figure></a>
 
-<!-- ---------------------------------SECCION 3 REACCIONES COMENTAR COMPARTIR--------------------- -->
+                        <!--Imagen del logo conectado para respuesta de comentarios principales-->
+                        <article class="conectado">
+                            <figure><img src="./img/conectado.jpg" alt=""></figure>
+                        </article>
+                        <section class="comentario-box">
+                            <article class="contenido-comentario">
+                                <h6 class="nombre-comentario"><a href="https://www.facebook.com">Claudia Belforte</h6></a><br>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, maiores iusto! Quod, minima in quaerat minus commodi possimus temporibus culpa magnam blanditiis quibusdam voluptate laborum officia eligendi, eius reprehenderit corrupti.
+                            </article>
+                            <article class="comentario-footer">   
+                                <span>1 hora</span>
+                                <a class="me_gusta" href="#">Me gusta</a>
+                                <a class="responder" href="#">Responder</a>
+                                <i class="fas fa-reply"></i>
+                                <i class="fas fa-heart"><p class="like">3</p></i>
+                                <i class="far fa-hand-point-right"></i>
+                                <i class="far fa-grin-hearts"></i>
+                                <i class="far fa-grin-wink"><p class="like">5</p></i>
+                            </article>
+                        </section>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <article class="comentario-main"> <!--Comentario principal-->
+                    <figure class="comentario-imagen"><a href="https://www.facebook.com"><img src="./img/imagen_2.jpg" alt=""></figure></a>
+                    <section class="comentario-box">
+                        <article class="contenido-comentario">
+                            <h6 class="nombre-comentario author"><a href="https://www.facebook.com">Lina Marcela Villa</h6></a><br>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, maiores iusto! Quod, minima in quaerat minus commodi possimus temporibus culpa magnam blanditiis quibusdam voluptate laborum officia eligendi, eius reprehenderit corrupti.
+                        </article>
+                        <article class="comentario-footer">
+                            <span>20 min</span>
+                            <a class="me_gusta" href="#">Me gusta</a>
+                            <a class="responder" href="#">Responder</a>
+                            <i class="fas fa-reply"></i>
+                            <i class="fas fa-heart"></i>
+                            <i class="far fa-hand-point-right"><p class="like">3</p></i>
+                            <i class="far fa-grin-hearts"></i>
+                            <i class="far fa-grin-wink"><p class="like">4</p></i>
+                        </article>
+                    </section>
+                </article>
+            </li>
+            <li>
+                <article class="comentario-main"> <!--Comentario principal-->
+                    <figure class="comentario-imagen"><a href="https://www.facebook.com"><img src="./img/imagen_4.jpg" alt=""></figure></a>
+                       <article class="conectado">
+                           <figure><img src="./img/conectado.jpg" alt=""></figure>
+                       </article>
+                    <section class="comentario-box">
+                        <article class="contenido-comentario">
+                            <h6 class="nombre-comentario author"><a href="https://www.facebook.com">Plataforma 39A</h6></a><br>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, maiores iusto! Quod, minima in quaerat minus commodi possimus temporibus culpa magnam blanditiis quibusdam voluptate laborum officia eligendi, eius reprehenderit corrupti.
+                        </article>
+                        <article class="comentario-footer">
+                            <span>20 min</span>
+                            <a class="me_gusta" href="#">Me gusta</a>
+                            <a class="responder" href="#">Responder</a>
+                            <i class="fas fa-reply"></i>
+                            <i class="fas fa-heart"></i>
+                            <i class="far fa-hand-point-right"></i>
+                            <i class="far fa-grin-hearts"><p class="like">6</p></i>
+                            <i class="far fa-grin-wink"></i>
+                        </article>
+                    </section>
+                </article>
 
-    <section class="boton">
-        <div class="boton-megusta">Me gusta</div>
-        <div class="boton-comentar">Comentar</div>
-        <div class="boton-compartir">Compartir</div>
-    </section>
-
-
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-    </script>
+                <!--Respuesta de los comenetarios-->
+                <ul class="lista-comentarios reply-list">
+                    <li>
+                        <figure class="comentario-imagen"><a href="https://www.facebook.com"><img src="./img/imagen_3.jpg" alt=""></figure></a>
+                        <section class="comentario-box">
+                            <article class="contenido-comentario">
+                                <h6 class="nombre-comentario"><a href="https://www.facebook.com">Gabriel</h6></a><br>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, maiores iusto! Quod, minima in quaerat minus commodi possimus temporibus culpa magnam blanditiis quibusdam voluptate laborum officia eligendi, eius reprehenderit corrupti.
+                            </article>
+                            <article class="comentario-footer">
+                                <span>1 hora</span>
+                                <a class="me_gusta" href="#">Me gusta</a>
+                                <a class="responder" href="#">Responder</a>
+                                <i class="fas fa-reply"></i>
+                                <i class="fas fa-heart"><p class="like">4</p></i>
+                                <i class="far fa-hand-point-right"><p class="like">2</p></i>
+                                <i class="far fa-grin-hearts"></i>
+                                <i class="far fa-grin-wink"></i>
+                            </article>
+                        </section>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </main>
 </body>
-
 </html>
