@@ -14,3 +14,20 @@ header {
 header div {
     border: 1px solid blue;
 }
+
+.post {
+    border: 1px solid green;
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.post-foto {
+    border: 1px solid red;
+    height: 400px;
+}
+
+.post-foto img {
+    width: 65%;
+}
