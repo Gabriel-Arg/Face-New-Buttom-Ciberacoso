@@ -31,3 +31,13 @@ header div {
 .post-foto img {
     width: 65%;
 }
+
+.boton {
+    border: 1px solid blue;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 40px;
+}
