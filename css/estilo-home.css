@@ -50,3 +50,12 @@ header div {
     height: auto;
 }
 
+.boton {
+    border: 1px solid blue;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 40px;
+}
