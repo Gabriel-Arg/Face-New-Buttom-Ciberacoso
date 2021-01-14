@@ -7,6 +7,7 @@ btn.addEventListener('click', ()=>{
     wrap.classList.toggle('display');
 });
 
+
 // *******Funcion para el me gusta del comentario principal_1********** 
 const btn2 = document.querySelector('.btn2');
 const wrap2 = document.querySelector('.wrapper2');
