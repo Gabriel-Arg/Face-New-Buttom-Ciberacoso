@@ -225,6 +225,14 @@ body{
     position: relative;
     top: 1px;
 }
+
+.comentario-box .comentario-footer .button-like{
+    margin-top: -54px;
+}
+
+.reply-list .comentario-box .comentario-footer .button-like{
+    margin-top: -64px;
+}
 .comentario-footer span{
     padding-inline-end: 30px;
 }
