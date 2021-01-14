@@ -1,13 +1,13 @@
 header {
     display: flex;
     flex-flow: nowrap row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 120px;
 }
 
 .diahorah {
-    font-size: 18px;
+    font-size: 16px;
     color: black;
 }
 
@@ -17,7 +17,7 @@ header {
 }
 
 .imagenh>.foto-perfilh {
-    margin-left: 10px;
+    margin-left: 1px;
     margin-top: -3px;
     width: 100%;
     height: 100%;
@@ -26,13 +26,13 @@ header {
 .menuh {
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 5px;
     justify-content: space-around;
 }
 
 .menu-sh {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     margin: 2px;
     background-color: rgb(110, 100, 100);
     border-radius: 50%;
@@ -40,5 +40,5 @@ header {
 }
 
 .nombre-usuarioh {
-    font-size: 25px;
+    font-size: 23px;
 }
