@@ -7,7 +7,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-.wrapper{
+/* ******clases de cada container de la funcion de emoji *********** */
+.wrapper, .wrapper2, .wrapper3, .wrapper4, .wrapper5, .wrapper6{
     width: 250px;
     height: 50px;
     background:#fff;
@@ -22,7 +23,9 @@
     align-items: center;
     transition: .5s ease-in-out;
 }
-.display{
+
+/* ******clases de cada container de la funcion de emoji *********** */
+.display, .display2, .display3, .display4, .display5, .display6{
     opacity: 0;
 }
 .emoji{
@@ -52,6 +55,7 @@ button{
     color: #494848;
     /* border-radius: 10px; */
     font-family: sans-serif;
+    cursor: pointer;
 }
 .btn-comentario{
     font-size: 13px;
@@ -121,8 +125,8 @@ button:active{
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    cursor: pointer;
 }
-
 
 .container-button a{
     color: #494848 ;
