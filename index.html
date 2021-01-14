@@ -21,6 +21,7 @@
 
     <!-- ENLACE A MI HOJA DE ESTILO EXTERNO CSS -->
     <link rel="stylesheet" href="/css/estilo-home.css">   
+    <link rel="stylesheet" href="/css/lina.css">
 
     <style>
         
@@ -51,9 +52,12 @@ POR FAVOR BORRARLO PARA NO ACUMULAR CODIGO BASURA-------------------------------
         <div class="post-foto">
             <img src="/img/post-02.jpg" alt="Foto de la chica">
         </div>
+        
+
         <div class="post-reacciones">
             <img src="" alt="">
-            <p style="margin: 0px;"> </p>Tú, Marcos y 35 personas más </p>
+            <p style="margin: 0px;">
+            <p>Tú, Marcos y 35 personas más </p>
             <p style="margin: 0px;"> 21 comentarios </p>
         </div>
     </section>
@@ -61,9 +65,38 @@ POR FAVOR BORRARLO PARA NO ACUMULAR CODIGO BASURA-------------------------------
 <!-- ---------------------------------SECCION 3 REACCIONES COMENTAR COMPARTIR--------------------- -->
 
     <section class="boton">
-        <div class="boton-megusta">Me gusta</div>
-        <div class="boton-comentar">Comentar</div>
-        <div class="boton-compartir">Compartir</div>
+        <!-- <div class="boton-megusta">Me gusta</div> -->
+        <div class="wrapper display">
+            <div class="emoji">
+                <a href="#" class="boton" id="boton1"><img src="/img/meGusta01.svg" alt=""></a>
+            </div>
+            <div class="emoji">
+                <a href="#" class="boton" id="boton2"><img src="/img/meEncanta.svg" alt=""></a>
+            </div>
+            <div class="emoji">
+                <a href="#" class="boton" id="boton3"><img src="/img/meDivierte.svg" alt=""></a>
+            </div>
+            <div class="emoji">
+                <a href="#" class="boton" id="boton4"><img src="/img/me-importa.svg" alt=""></a>
+            </div>
+            <div class="emoji">
+                <a href="#" class="boton" id="boton5"><img src="/img/meEnoja.svg" alt=""></a>
+            </div>
+            <div class="emoji">
+                <a href="#" class="boton" id="boton6"><img src="/img/me-entristece.svg"></a>
+            </div>
+            <div class="emoji">
+                <a href="#" class="boton" id="boton7"><img src="/img/Flushed Face Emoji.png"></a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container-button">
+            <button class="btn"><i class="fas fa-thumbs-up"></i></button>
+            <div class="boton-comentar"><a href="#"><i class="far fa-comment-alt"></i></a></div>
+            <div class="boton-compartir"><a href="#"><i class="fas fa-share"></i></a></div>
+        </div>
+
     </section>
 
 
@@ -79,6 +112,9 @@ POR FAVOR BORRARLO PARA NO ACUMULAR CODIGO BASURA-------------------------------
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
+
+<script src="/js/funtion.js"></script>
+<script src="/js/reaccion.js"></script>
 </body>
 
 </html>
