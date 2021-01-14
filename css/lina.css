@@ -53,6 +53,10 @@ button{
     /* border-radius: 10px; */
     font-family: sans-serif;
 }
+.btn-comentario{
+    font-size: 13px;
+}
+
 
 button:active{
     color: #0051ff;
@@ -123,4 +127,11 @@ button:active{
 .container-button a{
     color: #494848 ;
     font-size: 18px;
+}
+
+.contenedor-comentario{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
 }
