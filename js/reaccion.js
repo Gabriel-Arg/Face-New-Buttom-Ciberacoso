@@ -12,3 +12,10 @@ function reaccion() {
     }
 }
 boton.addEventListener('click', reaccion, true);
+// Cambio de color Pry
+const acoso = document.getElementById('acoso');
+const comentario = document.getElementById('contenido-comentario');
+
+acoso.addEventListener('click', (MouseEvent)=>{
+    comentario.style.backgroundColor= 'rgba(170, 10, 103, .3)';
+})
