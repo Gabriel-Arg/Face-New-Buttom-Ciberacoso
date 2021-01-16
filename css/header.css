@@ -1,4 +1,5 @@
 header {
+    width: 90vw;
     display: flex;
     flex-flow: nowrap row;
     justify-content: space-around;
@@ -12,8 +13,9 @@ header {
 }
 
 .imagenh {
-    width: 80px;
-    height: 80px;
+    width: 20%;
+    max-width: 80px;
+    
 }
 
 .imagenh>.foto-perfilh {
