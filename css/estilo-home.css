@@ -77,7 +77,6 @@ body{
 
 .lista-comentarios .comentario-imagen{
     width: 10%;
-    height: 10%;
     position: relative;
     z-index: 99;
     float: left;
@@ -88,8 +87,10 @@ body{
 }
 .lista-comentarios .comentario-imagen img{
     width: 100%;
+    object-fit: cover;
+    
     /* width: auto; */
-    height: 100%;
+    /* height: 100%; */
     border-radius: 100%;
     border: 4px solid gray;
     cursor: pointer;
@@ -332,8 +333,7 @@ body{
     /* margin: 0 10px; */
 }
 .lista-comentarios .comentario-imagen{
-    width: 50px;
-    height: 50px;
+    width: 10%;
 }
 .reply-list .comentario-imagen{
     width: 30px;
