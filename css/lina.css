@@ -23,7 +23,7 @@
     background: white;
     position: absolute;
     top: 150%;
-    left: 36%;
+    left: 45%;
     transform: translate(-50%, -50%);
     border-radius: 40px;
     /* box-shadow: 0 1px 15px #383838; */
@@ -236,8 +236,8 @@ button:active{
     height: 8%;
     background: white;
     position: absolute;
-    top: 150%;
-    left: 67%;
+    top: 147%;
+    left: 75%;
     transform: translate(-50%, -50%);
     border-radius: 40px;
     display: flex;

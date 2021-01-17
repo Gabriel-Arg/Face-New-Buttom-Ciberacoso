@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: ;
 }
 
 a{
@@ -15,18 +14,8 @@ ul{
 }
 
 body{
-    width: 80%;
-    margin: 0 auto;
     font-family: 'Roboto', arial, sans-serif;
     background: #dee1e3;
-}
-
-
-.post-foto{
-    width: 90%;
-}
-.post-foto img{
-    width: 100%;
 }
 
 /* ********lista de comentarios******* */
@@ -37,7 +26,7 @@ body{
 
 .comentarios-container{
     margin: 60px auto 15px;
-    width: 100%;
+    width: 768px;
 }
 
 .comentarios-container h5{
@@ -80,8 +69,8 @@ body{
 /* *******Imagen****** */
 
 .lista-comentarios .comentario-imagen{
-    width: 10%;
-    height: 10%;
+    width: 70px;
+    height: 70px;
     position: relative;
     z-index: 99;
     float: left;
@@ -115,12 +104,11 @@ body{
 
 /* ***********caja del Comentario***** */
 .lista-comentarios .comentario-box{
-    width: 85%;
+    width: 680px;
     float: right;
     position: relative;
     /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); */
     border-radius: 10px;
-    margin-left: 5px;
 }
 
 /* **********Logo de Conectado para comentario principal************ */
