@@ -1,12 +1,9 @@
-
-
-
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Clases del post */
 
 .post{
@@ -18,35 +15,69 @@
     align-items: center;
 }
 
+
 /* ******clases de cada container de la funcion de emoji *********** */
-.wrapper, .wrapper2, .wrapper3, .wrapper4, .wrapper5, .wrapper6{
-    width: 250px;
-    height: 50px;
-    background:#fff;
-    position: relative;
-    top: -60%;
-    left: 38%;
+.wrapper{
+    width: 34%;
+    height: 7%;
+    background: white;
+    position: absolute;
+    top: 150%;
+    left: 45%;
     transform: translate(-50%, -50%);
     border-radius: 40px;
-    box-shadow: 0 1px 15px #383838;
+    /* box-shadow: 0 1px 15px #383838; */
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     transition: .5s ease-in-out;
+    z-index: 1;
+}
+
+.wrapper2, .wrapper3, .wrapper4, .wrapper5, .wrapper6{
+    width: 51%;
+    height: 25%;
+    background: white;
+    position: absolute;
+    top: 90%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    border-radius: 40px;
+    /* box-shadow: 0 1px 15px #383838; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease-in-out;
+    z-index: 1;
+}
+
+.wrapper4, .wrapper5{
+    height: 37%;
+    top: 87%;
+}
+
+.wrapper3, .wrapper6{
+    top: 87%;
+    left: 54%;
 }
 
 /* ******clases de cada container de la funcion de emoji *********** */
 .display, .display2, .display3, .display4, .display5, .display6{
     opacity: 0;
 }
+
 .emoji{
     cursor: pointer;
-    height: 10px;
-    width: 20px;
+    height: 32%;
+    width: 17%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    box-shadow: 0 1px 15px #383838;
+    margin: -2%;
+    margin-left: -1%;
+    /* align-items: center;
+    box-shadow: 0 1px 15px #383838; */
 }
 
 .emoji:hover{
@@ -55,9 +86,13 @@
 }
 
 .emoji a img {
-    width: 30px;
-    margin-top: 10px;
+    width: 60%;
+    margin-top: -18%;
+    margin-bottom: 8%;
+    padding-bottom: 16%;
+    margin-left: 16%;
 }
+
 button{
     right:85%;
     font-size: 18px;
@@ -68,20 +103,22 @@ button{
     font-family: sans-serif;
     cursor: pointer;
 }
+
 .btn-comentario{
     font-size: 13px;
 }
-
 
 button:active{
     color: #0051ff;
     transform: scale(.9);
 }
+
 [data-title]:hover::after{
     opacity: 1;
     transition: all 0.1s ease 0.2s;
     visibility: visible;
 }
+
 [data-title]::after{
     content: attr(data-title);
     color: #000000;
@@ -97,6 +134,7 @@ button:active{
     z-index: 99999;
     visibility: hidden;
 }
+
 [data-title]{
     position: relative;
 }
@@ -124,12 +162,15 @@ button:active{
     display:grid;
     grid-row: 3;
 }
+
 .comentario.reaccion{
     background: rgb(207, 135, 207);
 }
+
 .comentario p{
     padding: 10px;
 }
+
 .container-button{
     width: 100%;
     position: absolute;
@@ -151,4 +192,87 @@ button:active{
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
+}
+@media (max-width:832px){
+.wrapper2, .wrapper4, .wrapper5{
+    width: 64%;
+    height: 12%;
+    background: white;
+    position: absolute;
+    top: 91%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    border-radius: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease-in-out;
+    z-index: 1;
+}
+.wrapper4, .wrapper5{
+    height: 19%;
+    top: 85%;
+
+}
+.wrapper3, .wrapper6{
+    width: 64%;
+    height: 18%;
+    background: white;
+    position: absolute;
+    top: 85%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    border-radius: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease-in-out;
+    z-index: 1;
+}
+.wrapper{
+    width: 90%;
+    height: 8%;
+    background: white;
+    position: absolute;
+    top: 147%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    border-radius: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease-in-out;
+    z-index: 1;
+}
+.emoji{
+    cursor: pointer;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -4%;
+}
+
+.emoji a img {
+    width: 60%;
+    margin-top: -2%;
+    margin-bottom: -34%;
+    padding-bottom: 20%;
+    margin-left: 19%;
+}
+.wrapper3 .wrapper6 .emoji{
+    width: 23%;
+    margin-left: -7%;
+}
+.wrapper3 .emoji a img,
+.wrapper6 .emoji a img{
+    width: 90%;
+    margin-left: -0%;
+    margin-top: 2%;
+    margin-bottom: -27%;
+    padding-bottom: 17%;
+} 
 }
