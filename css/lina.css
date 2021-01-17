@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+/* Clases del post */
+
+.post{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /* ******clases de cada container de la funcion de emoji *********** */
 .wrapper{
     width: 34%;
@@ -160,9 +172,11 @@ button:active{
 }
 
 .container-button{
+    width: 100%;
     position: absolute;
+    left: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     cursor: pointer;
