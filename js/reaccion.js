@@ -17,11 +17,34 @@ boton.addEventListener('click', reaccion, true);
 // Cambio de color Pry
 const acoso = document.getElementById('acoso');
 const comentario = document.getElementById('contenido-comentario1');
+const wrapper = document.getElementById ('wrapper');
+const meGusta = document.getElementsByClassName('me_gusta');
+var contador = 0;
 
+    function reaccion() {
+        if (contador == 0) {
+            comentario.style.backgroundColor= 'rgba(170, 10, 103, .3)'; 
+            wrapper.style.opacity = '0';
 
-acoso.addEventListener('click', (MouseEvent)=>{
-    comentario.style.backgroundColor= 'rgba(170, 10, 103, .3)';
-})
+            
+            
+            contador = 1;
+        } else {
+            comentario.style.backgroundColor= 'white';
+            wrapper.style.opacity = '0';
+
+            
+            
+            contador = 0;
+        }
+    }
+    
+    function mostrar(){
+        var trozo = document.getElementById("wrapper2");
+        trozo.style.visibility = "visible";
+    }
+
+    acoso.addEventListener('click', reaccion, true);
 
 // **************
 const acoso2 = document.getElementById('acoso2');
