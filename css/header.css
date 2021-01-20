@@ -29,7 +29,10 @@ header {
     display: flex;
     flex-direction: row;
     padding: 5px;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    /* margin-inline-end: -63%;
+    margin-left: 60%;
+    margin-right: 57%; */
 }
 
 .menu-sh {
@@ -44,3 +47,11 @@ header {
 .nombre-usuarioh {
     font-size: 23px;
 }
+
+@media (max-width:832px){
+.menuh {
+    margin-inline-end: -63%;
+    margin-left: 60%;
+    margin-right: -57%;
+    }
+    }
