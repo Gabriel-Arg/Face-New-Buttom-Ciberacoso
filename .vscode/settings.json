@@ -1,3 +1,4 @@
 {
-    "editor.renderWhitespace": "all"
+    "editor.renderWhitespace": "all",
+    "liveServer.settings.port": 5501
 }
