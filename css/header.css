@@ -67,3 +67,12 @@ header {
     display: inline-block;
 }
 
+/* Me pareción innecesario este mediaqueries..
+o al menos no le encontre funsión por eso lo comente */
+@media (max-width:832px){
+/* .menuh {
+    margin-inline-end: -63%;
+    margin-left: 60%;
+    margin-right: -57%;
+    } */
+    }
