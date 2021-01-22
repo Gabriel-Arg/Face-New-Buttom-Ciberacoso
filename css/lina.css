@@ -1,32 +1,19 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 /* Clases del post */
-
 .post{
-    display: flex;
-    flex-flow: nowrap column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    border: 1px solid red;
+    margin-bottom: 20px;
+}
+.post .post-comentario{
+    width: 95%;
+    margin: 0 auto 5px;
+}
+.post .post-foto{
+    width: 100%;
 }
 
-.post-comentario {
-    margin: 10px;
-    align-self: flex-start;
-}
-
-.post-foto-container {
-
-}
-
-.post-foto {
+.post .post-foto img{
     width: 100%;
 }
 
@@ -187,20 +174,33 @@ button:active{
 }
 
 .container-button{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    position: absolute;
-    left: 0;
-    margin: 10px auto;
+    width: 95%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 5px 0;
     cursor: pointer;
-}
 
+
+    position: absolute;
+    left: calc(100% - 95%);
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fa-share:before,
+.fa-comment-alt:before,
+.fa-thumbs-up:before{
+    margin-right: 5px;
+    font-size: 1.5rem;
+}
+.btn,
 .container-button a{
     color: #494848 ;
-    font-size: 18px;
+    font-size: 0.8rem;
+    background-color: transparent;
 }
+
 
 .contenedor-comentario{
     display: flex;
@@ -208,86 +208,18 @@ button:active{
     justify-content: space-around;
     align-items: center;
 }
-@media (max-width:832px){
-.wrapper2, .wrapper4, .wrapper5{
-    width: 64%;
-    height: 12%;
-    background: white;
-    position: absolute;
-    top: 91%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    border-radius: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    transition: .5s ease-in-out;
-    z-index: 1;
-}
-.wrapper4, .wrapper5{
-    height: 19%;
-    top: 85%;
 
-}
-.wrapper3, .wrapper6{
-    width: 64%;
-    height: 18%;
-    background: white;
-    position: absolute;
-    top: 85%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    border-radius: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    transition: .5s ease-in-out;
-    z-index: 1;
-}
-.wrapper{
-    width: 90%;
-    height: 8%;
-    background: white;
-    position: absolute;
-    top: inherit;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    border-radius: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    transition: .5s ease-in-out;
-    z-index: 1;
-}
-.emoji{
-    cursor: pointer;
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -4%;
-}
-
-.emoji a img {
-    width: 60%;
-    margin-top: -2%;
-    margin-bottom: -34%;
-    padding-bottom: 20%;
-    margin-left: 19%;
-}
-.wrapper3 .wrapper6 .emoji{
-    width: 23%;
-    margin-left: -7%;
-}
-.wrapper3 .emoji a img,
-.wrapper6 .emoji a img{
-    width: 90%;
-    margin-left: -0%;
-    margin-top: 2%;
-    margin-bottom: -27%;
-    padding-bottom: 17%;
-} 
+@media (min-width:460px){
+    .nombre-usuarioh strong {
+        font-size: 1.5rem;
+    }
+    .diahorah {
+        font-size: 1rem;
+        color: black;
+    }
+    .post .post-comentario {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }

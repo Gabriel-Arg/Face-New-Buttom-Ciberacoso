@@ -7,6 +7,8 @@
         <title>Comentarios Facebook</title>
         <link rel="stylesheet" href="./css/estilo-home.css">
         <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="/css/lina.css">
+        <link rel="stylesheet" media="(min-width:930px)" href="css/tablet-reponsive.css">
 
         <!-- **********Estilo de Fuentes******************** -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,9 +16,7 @@
         <!-- ***************Iconos************************ -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/all.min.css">
-        <link rel="stylesheet" href="/css/lina.css">
     </head>
-
 
 
 
@@ -29,12 +29,10 @@
         <header>
             <div class="imagenh">
                 <img class="foto-perfilh" src="/img/chica1.png" alt="">
+
             </div>
-            <div class="nombre">
-                <div class="nombre-usuarioh">
-                    <strong>Zam Quiros</strong>
-                    <p class="sentimiento">Se siente 😉 con confianza</p>
-                </div>
+            <div class="header-info">
+                <div class="nombre-usuarioh"><strong>Zam Quiros</strong></div>
                 <div class="diahorah">
                     <script type="text/javascript">
                         function makeArray() {
@@ -50,7 +48,7 @@
                         var year = (yy < 1000) ? yy + 1900 : yy;
                         document.write(day + " de " + months[month]);
                         var d = new Date();
-                        document.write(' a las ' + d.getHours(), ':' + d.getMinutes() + ' - ');
+                        document.write(' a las ' + d.getHours(), ':' + d.getMinutes() + ' - Bs. As. - ');
                     </script>
                     <i class="fas fa-globe-americas"></i>
                 </div>
@@ -65,6 +63,8 @@
 
         <!-------------------------------------SECCION 2 POST-------------------------------------------- -->
 
+
+
         <section class="post">
             <div class="post-comentario">
                 <p>
@@ -74,6 +74,7 @@
             <div class="post-foto-container">
                 <img class="post-foto" src="/img/post-03.png" alt="Foto de la chica">
             </div>
+
             <!-- <div class="post-reacciones">Reacciones y comentariosn que van bajo la foto</div> -->
             <!-- <a class="me_gusta" href="#">Me gusta</a> -->
             <section class="boton">
@@ -103,13 +104,13 @@
                 </div>
                 
                 <div class="container-button">
-                    <button class="btn"><i class="fas fa-thumbs-up"></i></button>
-                    <div class="boton-comentar"><a href="#"><i class="far fa-comment-alt"></i></a></div>
-                    <div class="boton-compartir"><a href="#"><i class="fas fa-share"></i></a></div>
+
+                <button class="btn"><i class="fas fa-thumbs-up"></i>Me gusta</button>
+                <div class="boton-comentar"><a href="#"><i class="far fa-comment-alt"></i>Comentar</a></div>
+                <div class="boton-compartir"><a href="#"><i class="fas fa-share"></i>Compartir</a></div>
                 </div>
             </section>
-        </section>
-
+            </section>
                 <!--Contenedor Principal-->
                 <main class="comentarios-container">
                     <h5>Ver 18 comentarios
@@ -123,17 +124,16 @@
 
                                 <!--Imagen del comentario principal-->
                                 <figure class="comentario-imagen">
-                                <a href="https://www.facebook.com"><img src="./img/imagen_1.jpg" alt=""></figure></a>
+                                <a href="https://www.facebook.com"><img src="./img/amiga.jpg" alt=""></figure></a>
                                     <!--Imagen del logo conectado para comentario principal-->
-                                    <article class="conectado">
-                                    <figure><img src="./img/conectado.jpg" alt=""></figure>
-                                    </article>
+                                    <!-- <article class="conectado"> -->
+                                    <!-- <figure><img src="./img/conectado.jpg" alt=""></figure> -->
+                                    <!-- </article> -->
                                     <!-- Contenedor de Comentario-->
                                     <section class="comentario-box">
-                                        <article class="contenido-comentario" id="contenido-comentario1">
-                                            <h6 class="nombre-comentario author"><a href="https://www.facebook.com">José Luis Martinez</h6></a><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, maiores iusto! Quod, minima in quaerat minus commodi possimus temporibus culpa magnam blanditiis
-                                                quibusdam voluptate laborum officia eligendi, eius reprehenderit corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, tempora? Totam repellendus sequi est, alias ipsum eius harum, laborum sapiente
-                                                quos unde minus quod, aut voluptatum fugiat assumenda minima nihil.
+                                        <article class="contenido-comentario" id="contenido-comentario3">
+                                            <h6 class="nombre-comentario author"><a href="https://www.facebook.com">Luisa Martinez</h6></a><br> 
+                                            <p>Te quedó hermoso el corte de cabello. Te quiero amiga</p>
                                         </article>
                                         <!--footer del comentario-->
                                         <article class="comentario-footer">
@@ -192,87 +192,18 @@
                                         </article>
                                     </section>
                             </article>
-
-                            <!--Respuesta de los comenetarios-->
-                            <ul class="lista-comentarios reply-list">
-                                <li>
-                                    <figure class="comentario-imagen">
-                                    <a href="https://www.facebook.com"><img src="./img/imagen_2.jpg" alt=""></figure> </a>
-                                    <!--Imagen del logo conectado para respuesta de comentarios principales-->
-                                    <article class="conectado">
-                                        <figure><img src="./img/conectado.jpg" alt=""></figure>
-                                    </article>
-                                    <section class="comentario-box">
-                                        <article class="contenido-comentario" id="contenido-comentario2">
-                                            <h6 class="nombre-comentario"><a href="https://www.facebook.com">Claudia Belforte</h6></a><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, maiores iusto! Quod, minima in quaerat minus commodi possimus temporibus culpa magnam blanditiis
-                                                quibusdam voluptate laborum officia eligendi, eius reprehenderit corrupti.
-                                        </article>
-                                        <article class="comentario-footer">
-                                            <span>1 hora</span>
-                                            <!-- <a class="me_gusta" href="#">Me gusta</a> -->
-                                            <section class="boton">
-                                                    <!-- <div class="boton-megusta">Me gusta</div> -->
-                                                    <div class="wrapper3 display3">
-                                                        <div class="emoji">
-                                                            <a href="#" class="boton" id="boton1"><img src="/img/meGusta01.svg" alt=""></a>
-                                                        </div>
-                                                        <div class="emoji">
-                                                            <a href="#" class="boton" id="boton2"><img src="/img/meEncanta.svg" alt=""></a>
-                                                        </div>
-                                                        <div class="emoji">
-                                                            <a href="#" class="boton" id="boton3"><img src="/img/meDivierte.svg" alt=""></a>
-                                                        </div>
-                                                        <div class="emoji">
-                                                            <a href="#" class="boton" id="boton4"><img src="/img/me-importa.svg" alt=""></a>
-                                                        </div>
-                                                        <div class="emoji">
-                                                            <a href="#" class="boton" id="boton5"><img src="/img/meEnoja.svg" alt=""></a>
-                                                        </div>
-                                                        <div class="emoji">
-                                                            <a href="#" class="boton" id="boton6"><img src="/img/me-entristece.svg"></a>
-                                                        </div>
-                                                        <div class="emoji">
-                                                            <a class="boton" id="acoso2"><img src="/img/Flushed Face Emoji.png"></a>
-                                                        </div>
-                                                    </div>
-                                                        <!-- </div> -->
-                                                        <!-- <div class="container-button">
-                                                        <button class="btn3"><i class="fas fa-thumbs-up"></i></button>
-                                                        <div class="boton-comentar"><a href="#"><i class="far fa-comment-alt"></i></a></div>
-                                                        <div class="boton-compartir"><a href="#"><i class="fas fa-share"></i></a></div>
-                                                        </div> -->
-
-                                                    <!-- ******Sección donde esta la funcion de los emoji*********** -->
-                                                    <section class="button-like">
-                                                        <a class="me_gusta btn3">Me gusta</a>
-                                                        <a class="responder" href="#">Responder</a>
-                                                        <!-- <i class="fas fa-reply"></i> -->
-                                                        <figure class="like2">
-                                                            <img src="/img/meDivierte.svg" alt="">
-                                                            <img src="/img/meEncanta.svg" alt="">
-                                                            <img src="/img/meEnoja.svg" alt="">
-                                                            <img src="/img/me-entristece.svg" alt="">
-                                                        </figure>
-                                                        <!-- <i class="fas fa-heart"><p class="like">2</p></i>
-                                                        <i class="far fa-hand-point-right"></i>
-                                                        <i class="far fa-grin-hearts"><p class="like">2</p></i>
-                                                        <i class="far fa-grin-wink"></i> -->
-                                                    </section>
-                                            </section>
-                                        </article>
-                                    </section>
-                                </li>
-                            </ul>
                         </li>
                         <li>
                             <article class="comentario-main">
                                 <!--Comentario principal-->
                                 <figure class="comentario-imagen">
-                                    <a href="https://www.facebook.com"><img src="./img/imagen_2.jpg" alt=""></figure></a>
+                                    <a href="https://www.facebook.com"><img src="./img/hombre01.jpg" alt=""></figure></a>
                                 <section class="comentario-box">
                                     <article class="contenido-comentario" id="contenido-comentario3">
-                                        <h6 class="nombre-comentario author"><a href="https://www.facebook.com">Lina Marcela Villa</h6></a><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, maiores iusto! Quod, minima in quaerat minus commodi possimus temporibus culpa magnam blanditiis
-                                            quibusdam voluptate laborum officia eligendi, eius reprehenderit corrupti.
+                                        <h6 class="nombre-comentario author"><a href="https://www.facebook.com">Raúl Perez</h6></a><br> 
+                                        <p>Chiquita!!! Que perra que sos.
+                                            Pasame tú número x mp. Te parto al medio no podes estar tan buena...
+                                        </p>
                                     </article>
                                     <article class="comentario-footer">
                                         <span>20 min</span>
@@ -332,14 +263,16 @@
                             <article class="comentario-main">
                                 <!--Comentario principal-->
                                 <figure class="comentario-imagen">
-                                    <a href="https://www.facebook.com"><img src="./img/imagen_4.jpg" alt=""></figure></a>
-                                <article class="conectado">
-                                    <figure><img src="./img/conectado.jpg" alt=""></figure>
-                                </article>
+                                    <a href="https://www.facebook.com"><img src="./img/hombre02.jpg" alt=""></a>
+                                    <article class="conectado">
+                                        <figure><img src="./img/conectado.jpg" alt=""></figure>
+                                    </article>
+                                </figure>
                                 <section class="comentario-box">
-                                    <article class="contenido-comentario" id="contenido-comentario4">
-                                        <h6 class="nombre-comentario author"><a href="https://www.facebook.com">Plataforma 39A</h6></a><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, maiores iusto! Quod, minima in quaerat minus commodi possimus temporibus culpa magnam blanditiis
-                                            quibusdam voluptate laborum officia eligendi, eius reprehenderit corrupti.
+                                    <article class="contenido-comentario" id="contenido-comentario3">
+                                        <h6 class="nombre-comentario author"><a href="https://www.facebook.com">Pedro Gonzalez</h6></a><br> 
+                                        <p>Buenas tardes señorita... Usted es como el resplandor del sol por las mañanas, quiero invitarla a romar un café. Le paso mi número 01115584400
+                                        </p>
                                     </article>
                                     <article class="comentario-footer">
                                         <span>20 min</span>
@@ -393,69 +326,6 @@
                                     </article>
                                 </section>
                             </article>
-                            <!--Respuesta de los comenetarios-->
-                            <ul class="lista-comentarios reply-list">
-                                <li>
-                                    <figure class="comentario-imagen">
-                                        <a href="https://www.facebook.com"><img src="./img/imagen_3.jpg" alt=""></figure></a>
-                                    <section class="comentario-box">
-                                        <article class="contenido-comentario" id="contenido-comentario5">
-                                            <h6 class="nombre-comentario"><a href="https://www.facebook.com">Gabriel</h6></a><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, maiores iusto! Quod, minima in quaerat minus commodi possimus temporibus culpa magnam blanditiis quibusdam
-                                                voluptate laborum officia eligendi, eius reprehenderit corrupti.
-                                        </article>
-                                        <article class="comentario-footer">
-                                            <span>1 hora</span>
-                                            <section class="boton">
-                                                <!-- <div class="boton-megusta">Me gusta</div> -->
-                                                <div class="wrapper6 display6">
-                                                    <div class="emoji">
-                                                        <a href="#" class="boton" id="boton1"><img src="/img/meGusta01.svg" alt=""></a>
-                                                    </div>
-                                                    <div class="emoji">
-                                                        <a href="#" class="boton" id="boton2"><img src="/img/meEncanta.svg" alt=""></a>
-                                                    </div>
-                                                    <div class="emoji">
-                                                        <a href="#" class="boton" id="boton3"><img src="/img/meDivierte.svg" alt=""></a>
-                                                    </div>
-                                                    <div class="emoji">
-                                                        <a href="#" class="boton" id="boton4"><img src="/img/me-importa.svg" alt=""></a>
-                                                    </div>
-                                                    <div class="emoji">
-                                                        <a href="#" class="boton" id="boton5"><img src="/img/meEnoja.svg" alt=""></a>
-                                                    </div>
-                                                    <div class="emoji">
-                                                        <a href="#" class="boton" id="boton6"><img src="/img/me-entristece.svg"></a>
-                                                    </div>
-                                                    <div class="emoji">
-                                                        <a class="boton" id="acoso5"><img src="/img/Flushed Face Emoji.png"></a>
-                                                    </div>
-                                                </div>
-                                                <!-- <div class="container-button">
-                                                    <button class="btn6"><i class="fas fa-thumbs-up"></i></button>
-                                                    <div class="boton-comentar"><a href="#"><i class="far fa-comment-alt"></i></a></div>
-                                                    <div class="boton-compartir"><a href="#"><i class="fas fa-share"></i></a></div>
-                                                </div> -->
-                                                <!-- ******Sección donde esta la funcion de los emoji*********** -->
-                                                <section class="button-like">
-                                                    <a class="me_gusta btn6">Me gusta</a>
-                                                    <a class="responder" href="#">Responder</a>
-                                                    <!-- <i class="fas fa-reply"></i> -->
-                                                    <figure class="like2">
-                                                        <img src="/img/meDivierte.svg" alt="">
-                                                        <img src="/img/meEncanta.svg" alt="">
-                                                        <img src="/img/meEnoja.svg" alt="">
-                                                        <img src="/img/me-entristece.svg" alt="">
-                                                    </figure>
-                                                    <!-- <i class="fas fa-heart"></i>
-                                                    <i class="far fa-hand-point-right"><p class="like">4</p></i>
-                                                    <i class="far fa-grin-hearts"></i>
-                                                    <i class="far fa-grin-wink"><p class="like">2</p></i> -->
-                                                </section>
-                                            </section>
-                                        </article>
-                                    </section>
-                                </li>
-                            </ul>
                         </li>
                     </ul>
                 </main>
