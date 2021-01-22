@@ -33,17 +33,17 @@ btn4.addEventListener('click', ()=>{
 });
 
 // *******Funcion para el me gusta del comentario principal_3********** 
-const btn5 = document.querySelector('.btn5');
-const wrap5 = document.querySelector('.wrapper5');
+// const btn5 = document.querySelector('.btn5');
+// const wrap5 = document.querySelector('.wrapper5');
 
-btn5.addEventListener('click', ()=>{
-    wrap5.classList.toggle('display5');
-});
+// btn5.addEventListener('click', ()=>{
+//     wrap5.classList.toggle('display5');
+// });
 
 // *******Funcion para el me gusta respuesta del comentario_3********** 
-const btn6 = document.querySelector('.btn6');
-const wrap6 = document.querySelector('.wrapper6');
+// const btn6 = document.querySelector('.btn6');
+// const wrap6 = document.querySelector('.wrapper6');
 
-btn6.addEventListener('click', ()=>{
-    wrap6.classList.toggle('display6');
-});
+// btn6.addEventListener('click', ()=>{
+//     wrap6.classList.toggle('display6');
+// });
