@@ -37,13 +37,13 @@
     z-index: 1;
 }
 
-.wrapper2, .wrapper3, .wrapper4, .wrapper5, .wrapper6{
-    width: 51%;
-    height: 25%;
+.wrapper2, .wrapper3, .wrapper4{
+    width: 46%;
+    height: 45%;
     background: white;
     position: absolute;
     top: 90%;
-    left: 52%;
+    left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 40px;
     /* box-shadow: 0 1px 15px #383838; */
@@ -55,18 +55,18 @@
     z-index: 1;
 }
 
-.wrapper4, .wrapper5{
+/* .wrapper4{
     height: 37%;
     top: 87%;
 }
 
-.wrapper3, .wrapper6{
+.wrapper3{
     top: 87%;
     left: 54%;
-}
+} */
 
 /* ******clases de cada container de la funcion de emoji *********** */
-.display, .display2, .display3, .display4, .display5, .display6{
+.display, .display2, .display3, .display4{
     opacity: 0;
 }
 
@@ -209,7 +209,7 @@ button:active{
     align-items: center;
 }
 
-@media (min-width:460px){
+@media (max-width:832px){
     .nombre-usuarioh strong {
         font-size: 1.5rem;
     }
@@ -221,5 +221,22 @@ button:active{
         font-size: 20px;
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+    .wrapper2, .wrapper3, .wrapper4{
+        width: 54%;
+        height: 19%;
+        background: white;
+        position: absolute;
+        top: 88%;
+        left: 79%;
+        transform: translate(-50%, -50%);
+        border-radius: 40px;
+        /* box-shadow: 0 1px 15px #383838; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        transition: .5s ease-in-out;
+        z-index: 1;
     }
 }
