@@ -1,8 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 a{
     columns: #03658c;
@@ -19,20 +15,18 @@ body{
 }
 
 /* ********lista de comentarios******* */
-
-.comentarios-container h5{
-    padding: 0 12px;
+.comentario-main{
+    width: 100%;
 }
-
 .comentarios-container{
-    margin: 60px auto 15px;
-    width: 768px;
+    width: 95%;
+    margin-top: 50px;
+    padding-left: 10px;
 }
-
 .comentarios-container h5{
     font-size: 14px;
-    color: #283035;
-    font-weight: 400;
+    color: #707070;
+    font-weight: bold;
 }
 
 .comentarios-container h5 a{
@@ -41,8 +35,31 @@ body{
 }
 
 .lista-comentarios{
-    margin-top: 30px;
+    margin-top:20px;
+    padding-left: 0;
     position: relative;
+}
+
+.lista-comentarios .comentario-imagen{
+    width: 60px;
+    height: 60px;
+    margin: 0;
+
+    position: relative;
+    display: inline-block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+.lista-comentarios .comentario-imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    border-radius: 50%;
+    border: 2px solid gray;
+    cursor: pointer;
 }
 
 .lista-comentarios li{
@@ -68,26 +85,19 @@ body{
 
 /* *******Imagen****** */
 
-.lista-comentarios .comentario-imagen{
+/* .lista-comentarios .comentario-imagen{
     width: 70px;
     height: 70px;
     position: relative;
     z-index: 99;
     float: left;
-    /* border: 3px solid #fff; */
+    
     border-radius: 4px;
-    /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); */
+    
+    
     overflow: hidden;
-}
+} */
 
-.lista-comentarios .comentario-imagen img{
-    width: 100%;
-    /* width: auto; */
-    height: 100%;
-    border-radius: 100%;
-    border: 4px solid gray;
-    cursor: pointer;
-}
 
 .reply-list .comentario-imagen{
     width: 50px;
@@ -104,37 +114,22 @@ body{
 
 /* ***********caja del Comentario***** */
 .lista-comentarios .comentario-box{
-    width: 680px;
+    width: calc(100% - 80px);
+    height: auto;
     float: right;
     position: relative;
     /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); */
     border-radius: 10px;
 }
-
-/* **********Logo de Conectado para comentario principal************ */
-.conectado img{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    clear: both;
-    margin-top: 50px;
-    margin-left: -15px;
-    position: absolute;
-    z-index: 100;
+.lista-comentarios .comentario-box .contenido-comentario p{
+    width: 100%;
+    font-size: 15px;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 0;
 }
 
 /* **********Logo de Conectado para comentario respuesta************ */
-.reply-list .conectado img{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    clear: both;
-    margin-top: 35px;
-    margin-left: -10px;
-    position: absolute;
-    z-index: 100;
-}
-
 .lista-comentarios .comentario-box::before{
     border-width: 11px 13px 11px 0;
     border-color: transparent rgba(0, 0, 0, 0.05);
@@ -142,10 +137,11 @@ body{
 }
 
 .reply-list .comentario-box{
-    width: 610px;
+    /* width: 610px; */
 }
 
 .comentario-box .comentario-footer{
+    width: 100%;
     background: #fcfcfc;
     padding: 10px 12px;
     border-bottom: 0px solid #e5e5e5;
@@ -243,7 +239,7 @@ body{
     font-size: 12px;
     font-weight: 700;
     float: left;
-    margin-right: 10px;
+    margin:0 10px;
 }
 
 .comentario-box .nombre-comentario a{  
@@ -272,7 +268,7 @@ body{
 }
 
 .comentario-box .comentario-footer .me_gusta, .responder{
-    padding-inline: 30px;
+    padding-inline: 10px;
     cursor: pointer;
 }
 
@@ -285,7 +281,8 @@ body{
 }
 
 .comentario-box .contenido-comentario{
-    background: rgb(240, 239, 239);
+    height: auto;
+    background: rgba(202, 200, 200, 0.452);
     padding: 12px;
     font-size: 12px;
     color: #313131;
@@ -319,7 +316,8 @@ body{
 } */
 
 /* *******Responsive**** */
-@media (max-width:832px){
+
+/* @media (max-width:832px){
 .comentarios-container{
     width: 480px;
     padding-right: 25px;
@@ -364,7 +362,7 @@ body{
     padding-inline-end: 0px;
     padding-inline-start: 5px;
     /* margin: 0 10px; */
-}
+
 
 .reply-list .comentario-box .comentario-footer a{
     padding-inline-end: 0px;
@@ -372,10 +370,7 @@ body{
     /* margin: 0 10px; */
 }
 
-.lista-comentarios .comentario-imagen{
-    width: 50px;
-    height: 50px;
-}
+
 
 .reply-list .comentario-imagen{
     width: 30px;
@@ -391,11 +386,11 @@ body{
 }
 
 .lista-comentarios .comentario-footer .boton .button-like .like2{
-    width: 4%;
+    width: 20px;
     height: 22%;
     position: absolute;
-    left: 84%;
-    top: 79%;
+    left: calc(60% - 4%);
+    top: 45%;
     display: flex;
 }
 
@@ -418,4 +413,4 @@ body{
     height: 118%;
     margin-right: 10%;
 }
-}
+
