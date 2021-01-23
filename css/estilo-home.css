@@ -13,6 +13,17 @@ body{
     font-family: 'Roboto', arial, sans-serif;
     background: #dee1e3;
 }
+.contenedor-centrado{
+    width: 1000px; 
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit; 
+}
+.container-seccion2 img{
+    width: 100%;
+}
 
 /* ********lista de comentarios******* */
 .comentario-main{
