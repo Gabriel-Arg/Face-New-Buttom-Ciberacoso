@@ -2,10 +2,10 @@
 <html lang="es">
 
     <head>
-      
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Comentarios Facebook</title>
+        <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/estilo-home.css">
         <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="/css/lina.css">
@@ -24,47 +24,47 @@
 
 
     <body>
-            
-            <!-----------------------HEADER----------------------------->
-            
-        <header>
-            <div class="contenedor-centrado">
-            
-                <div class="imagenh">
-                    <img class="foto-perfilh" src="/img/chica1.png" alt="">
-    
-                </div>
-                <div class="header-info">
-                    <div class="nombre-usuarioh"><strong>Zam Quiros</strong></div>
-                    <div class="diahorah">
-                        <script type="text/javascript">
-                            function makeArray() {
-                                for (i = 0; i < makeArray.arguments.length; i++)
-                                    this[i + 1] = makeArray.arguments[i];
-                            }
-                            var months = new makeArray('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo',
-                                'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre');
-                            var date = new Date();
-                            var day = date.getDate();
-                            var month = date.getMonth() + 1;
-                            var yy = date.getYear();
-                            var year = (yy < 1000) ? yy + 1900 : yy;
-                            document.write(day + " de " + months[month]);
-                            var d = new Date();
-                            document.write(' a las ' + d.getHours(), ':' + d.getMinutes() + ' - Bs. As. - ');
-                        </script>
-                        <i class="fas fa-globe-americas"></i>
+        <!-----------------------HEADER----------------------------->
+        <div class="header">
+            <div class="contenedor-centrado encabezado ">
+                <header>     
+                    <div class="imagenh">
+                        <img class="foto-perfilh" src="/img/chica1.png" alt="">
                     </div>
-                </div>
+                    <div class="header-info">
+                        <div class="nombre-usuarioh"><strong>Zam Quiros</strong></div>
+                            <div class="diahorah">
+                                <script type="text/javascript">
+                                    function makeArray() {
+                                        for (i = 0; i < makeArray.arguments.length; i++)
+                                        this[i + 1] = makeArray.arguments[i];
+                                    }
+                                    var months = new makeArray('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo',
+                                    'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre');
+                                    var date = new Date();
+                                    var day = date.getDate();
+                                    var month = date.getMonth() + 1;
+                                    var yy = date.getYear();
+                                    var year = (yy < 1000) ? yy + 1900 : yy;
+                                    document.write(day + " de " + months[month]);
+                                    var d = new Date();
+                                    document.write(' a las ' + d.getHours(), ':' + d.getMinutes() + ' - Bs. As. - ');
+                                </script>
+                                <i class="fas fa-globe-americas"></i>
+                            </div>
+                        </div>
+                        <div class="menuh">
+                            <div class="menu-sh"></div>
+                            <div class="menu-sh"></div>
+                            <div class="menu-sh"></div>
+                        </div>
+                    </div>
+                </header>
+            </div>            
+        </div>
+            
     
-                <div class="menuh">
-                    <div class="menu-sh"></div>
-                    <div class="menu-sh"></div>
-                    <div class="menu-sh"></div>
-                </div>
-            </div>
 
-        </header>
 
         <!-------------------------------------SECCION 2 POST-------------------------------------------- -->
 
@@ -326,15 +326,15 @@
                                                     <i class="far fa-hand-point-right"><p class="like">1</p></i>
                                                     <i class="far fa-grin-hearts"></i>
                                                     <i class="far fa-grin-wink"><p class="like">6</p></i> -->
-                                                </section>
-                                        </section>
-                                    </article>
-                                </section>
-                            </article>
-                        </li>
-                    </ul>
-                </main>
-            </div>
+                                            </section>
+                                    </section>
+                                </article>
+                            </section>
+                        </article>
+                    </li>
+                </ul>
+            </main>
+        </div>
                 <script src="/js/funciones.js"></script>
                 <script src="/js/reaccion.js"></script>
     </body>
