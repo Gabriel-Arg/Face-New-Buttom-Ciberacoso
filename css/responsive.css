@@ -1,0 +1,107 @@
+.header{
+    width: 38%;
+    margin: 0 auto;
+    background: violet;
+}
+.contenedor-centrado{
+    width: 70%; 
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    
+}
+@media screen and (max-width:1300px){
+    .contenedor-centrado{
+        width: 80%;
+    }
+    .post-foto{
+        width: 54.3%;
+    }
+    .header{
+        width: 43.3%;
+    }
+}
+
+@media screen and  (max-width:750px){
+    .contenedor-centrado{
+        width: 85%;
+    }
+    .post-foto{
+        width: 81.5%;
+    }
+    .post .post-comentario{
+        width: 81%;
+        margin: 0 auto;
+        background: white;
+        margin-top: 0;
+        padding: 2px 1px 2px 0;
+    }
+    .post .post-comentario{
+        width: 81%;
+        margin: 0 auto;
+        background: white;
+        margin-top: 0;
+    }
+    .header{
+        width: 69%;
+        margin: 0 auto;
+        background: white;
+        margin-top: 0;
+    }
+    body{
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width:470px){
+    .contenedor-centrado{
+        width: 100%;
+        font-size: 12px;
+    }
+    .post-foto{
+        width: 100%;
+    }
+    .post .post-comentario{
+        width: 100%;
+        background: skyblue;
+        margin-top: -1px;
+    }
+    .header{
+        width: 100%;
+        background: skyblue;
+        margin-top: 0;
+    }
+    body{
+        padding: 0;
+    }
+    
+}
+
+
+@media screen and (max-width:320px){
+    .contenedor-centrado{
+        width: 100%;
+        font-size: 10px;
+    }
+    .post-foto{
+        width: 100%;
+    }
+    .post .post-comentario{
+        width: 100%;
+        background: yellowgreen;
+        margin-top: -1px;
+    }
+    .header{
+        width: 100%;
+        background: yellowgreen;
+        margin-top: 0;
+    }
+    body{
+        padding: 0;
+    }
+}
+
+

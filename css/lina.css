@@ -5,17 +5,13 @@
 }
 
 /* Clases del post */
-.header{
-    width: 37.9%;
-    margin: 0 auto;
-    background: violet;
-}
+
 .post{
     width: 100%;
     margin-bottom: 20px;
 }
 .post .post-comentario{
-    width: 54%;
+    width: 54.2%;
     margin: 0 auto;
     background: white;
     margin-top: 0;
@@ -263,52 +259,3 @@ button:active{
         z-index: 1;
     } */
 /* } */
-@media screen and  (max-width:750px){
-    .post .post-comentario{
-        width: 81%;
-        margin: 0 auto;
-        background: white;
-        margin-top: 0;
-    }
-    .header{
-        width: 69%;
-        margin: 0 auto;
-        background: white;
-        margin-top: 0;
-    }
-    body{
-        padding: 0;
-    }
-}
-@media screen and  (max-width:470px){
-    .post .post-comentario{
-        width: 100%;
-        background: skyblue;
-        margin-top: -1px;
-    }
-    .header{
-        width: 100%;
-        background: skyblue;
-        margin-top: 0;
-    }
-    body{
-        padding: 0;
-    }
-}
-
-@media screen and  (max-width:320px){
-    .post .post-comentario{
-        width: 100%;
-        background: yellowgreen;
-        margin-top: -1px;
-    }
-    .header{
-        width: 100%;
-        /* margin: 0 auto; */
-        background: yellowgreen;
-        margin-top: 0;
-    }
-    body{
-        padding: 0;
-    }
-}
