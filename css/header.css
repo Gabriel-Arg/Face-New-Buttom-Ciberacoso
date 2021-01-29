@@ -48,9 +48,9 @@ header {
 }
 
 .imagenh>.foto-perfilh {
-    margin-left: 1px;
-    margin-top: -3px;
-    width: 100%;
+    margin-left: 0px;
+    margin-top: 4px;
+    width: 80%;
     height: 100%;
 }
 
@@ -75,10 +75,10 @@ header {
 
 /* Me pareción innecesario este mediaqueries..
 o al menos no le encontre funsión por eso lo comente */
-@media (max-width:832px){
+/* @media (max-width:832px){
 /* .menuh {
     margin-inline-end: -63%;
     margin-left: 60%;
     margin-right: -57%;
     } */
-    }
+  /*  } */
