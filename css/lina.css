@@ -56,7 +56,7 @@
     z-index: 1;
 }
 
-.wrapper2, .wrapper3, .wrapper4{
+.wrapper2, .wrapper3, .wrapper4, .wrapper5{
     width: 46%;
     height: 45%;
     background: white;
@@ -85,7 +85,7 @@
 } */
 
 /* ******clases de cada container de la funcion de emoji *********** */
-.display, .display2, .display3, .display4{
+.display, .display2, .display3, .display4, .display5{
     opacity: 0;
 }
 

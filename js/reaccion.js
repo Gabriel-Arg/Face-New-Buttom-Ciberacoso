@@ -10,7 +10,7 @@
             comentario.style.backgroundColor= 'rgba(170, 10, 103, .3)';  
             contador = 1;
         } else {
-            comentario.style.backgroundColor= '#f0efef';
+            comentario.style.backgroundColor= 'rgba(202, 200, 200, 0.452)';
             contador = 0;
         }
     }
@@ -31,7 +31,7 @@
             comentario2.style.backgroundColor= 'rgba(170, 10, 103, .3)';  
             contador2 = 1;
         } else {
-            comentario2.style.backgroundColor= '#f0efef';
+            comentario2.style.backgroundColor= 'rgba(202, 200, 200, 0.452)';
             contador2 = 0;
         }
     }
@@ -51,7 +51,7 @@
             comentario3.style.backgroundColor= 'rgba(170, 10, 103, .3)';  
             contador3 = 1;
         } else {
-            comentario3.style.backgroundColor= '#f0efef';
+            comentario3.style.backgroundColor= 'rgba(202, 200, 200, 0.452)';
             contador3 = 0;
         }
     }
@@ -61,24 +61,24 @@
     });
 
     // Funcion para el cambio de color del comentario3
-    // const acoso4 = document.getElementById('acoso4');
-    // const comentario4 = document.getElementById('contenido-comentario4');
+    const acoso4 = document.getElementById('acoso4');
+    const comentario4 = document.getElementById('contenido-comentario4');
 
-    // var contador4 = 0;
+    var contador4 = 0;
 
-    // function reaccion4() {
-    //     if (contador4 == 0) {
-    //         comentario4.style.backgroundColor= 'rgba(170, 10, 103, .3)';  
-    //         contador4 = 1;
-    //     } else {
-    //         comentario4.style.backgroundColor= '#f0efef';
-    //         contador4 = 0;
-    //     }
-    // }
-    //     acoso4.addEventListener('click', reaccion4, true);   
-    //     acoso4.addEventListener('click', ()=>{
-    //     wrap5.classList.toggle('display5');
-    // });
+    function reaccion4() {
+        if (contador4 == 0) {
+            comentario4.style.backgroundColor= 'rgba(170, 10, 103, .3)';  
+            contador4 = 1;
+        } else {
+            comentario4.style.backgroundColor= 'rgba(202, 200, 200, 0.452)';
+            contador4 = 0;
+        }
+    }
+        acoso4.addEventListener('click', reaccion4, true);   
+        acoso4.addEventListener('click', ()=>{
+        wrap5.classList.toggle('display5');
+    });
 
     // Funcion para el cambio de color de la respuesta al comentario1
     // const acoso5 = document.getElementById('acoso5');
