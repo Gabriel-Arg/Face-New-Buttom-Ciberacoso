@@ -1,26 +1,30 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+
 /* Clases del post */
 
-.post{
+.post {
     width: 100%;
     margin-bottom: 20px;
 }
-.post .post-comentario p{
+
+.post .post-comentario p {
     /* width: 54.2%;
     margin: 0 auto;
     background: white;
     margin-top: 0;
     padding: 2px 1px 2px 0; */
 }
-.post .post-comentario p{
+
+.post .post-comentario p {
     text-align: center;
 }
-.post-foto-container{
+
+.post-foto-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,17 +32,20 @@
     height: 100%;
     margin: 0 auto;
 }
+
+
 /* .post .post-foto{
     width: 100%;
 } */
 
-.post .post-foto img{
+.post .post-foto img {
     margin-top: 0;
 }
 
 
 /* ******clases de cada container de la funcion de emoji *********** */
-.wrapper{
+
+.wrapper {
     width: 34%;
     height: 7%;
     background: white;
@@ -56,7 +63,10 @@
     z-index: 1;
 }
 
-.wrapper2, .wrapper3, .wrapper4, .wrapper5{
+.wrapper2,
+.wrapper3,
+.wrapper4,
+.wrapper5 {
     width: 46%;
     height: 45%;
     background: white;
@@ -74,6 +84,7 @@
     z-index: 1;
 }
 
+
 /* .wrapper4{
     height: 37%;
     top: 87%;
@@ -84,12 +95,18 @@
     left: 54%;
 } */
 
+
 /* ******clases de cada container de la funcion de emoji *********** */
-.display, .display2, .display3, .display4, .display5{
+
+.display,
+.display2,
+.display3,
+.display4,
+.display5 {
     opacity: 0;
 }
 
-.emoji{
+.emoji {
     cursor: pointer;
     height: 32%;
     width: 17%;
@@ -101,7 +118,7 @@
     box-shadow: 0 1px 15px #383838; */
 }
 
-.emoji:hover{
+.emoji:hover {
     transform: scale(1.15) rotate(-8deg);
     transition: .2s ease-in-out;
 }
@@ -114,8 +131,8 @@
     margin-left: 16%;
 }
 
-button{
-    right:85%;
+button {
+    right: 85%;
     font-size: 18px;
     border: none;
     outline: none;
@@ -125,22 +142,22 @@ button{
     cursor: pointer;
 }
 
-.btn-comentario{
+.btn-comentario {
     font-size: 13px;
 }
 
-button:active{
+button:active {
     color: #0051ff;
     transform: scale(.9);
 }
 
-[data-title]:hover::after{
+[data-title]:hover::after {
     opacity: 1;
     transition: all 0.1s ease 0.2s;
     visibility: visible;
 }
 
-[data-title]::after{
+[data-title]::after {
     content: attr(data-title);
     color: #000000;
     font-size: 25px;
@@ -156,9 +173,10 @@ button:active{
     visibility: hidden;
 }
 
-[data-title]{
+[data-title] {
     position: relative;
 }
+
 
 /* .container{
     display: grid;
@@ -179,57 +197,59 @@ button:active{
     
     
 } */
-.comentario:nth-child(2){
-    display:grid;
+
+.comentario:nth-child(2) {
+    display: grid;
     grid-row: 3;
 }
 
-.comentario.reaccion{
+.comentario.reaccion {
     background: rgb(207, 135, 207);
 }
 
-.comentario p{
+.comentario p {
     padding: 10px;
 }
 
-.container-button{
+.container-button {
     width: 95%;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
     padding: 5px 0;
     cursor: pointer;
-
-
     position: absolute;
-    left: calc(100% - 95%);
-    
+    left: calc(100% - 98%);
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+
 .fa-share:before,
 .fa-comment-alt:before,
-.fa-thumbs-up:before{
+.fa-thumbs-up:before {
     margin-right: 5px;
     font-size: 1.5rem;
 }
+
 .btn,
-.container-button a{
-    color: #494848 ;
+.container-button a {
+    color: #494848;
     font-size: 0.8rem;
     background-color: transparent;
 }
 
-
-.contenedor-comentario{
+.contenedor-comentario {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
 }
 
+
 /* @media (max-width:832px){ */
-    /* .nombre-usuarioh strong {
+
+
+/* .nombre-usuarioh strong {
         font-size: 1.5rem;
     }
     .diahorah {
@@ -250,12 +270,18 @@ button:active{
         left: 79%;
         transform: translate(-50%, -50%);
         border-radius: 40px; */
-        /* box-shadow: 0 1px 15px #383838; */
-        /* display: flex;
+
+
+/* box-shadow: 0 1px 15px #383838; */
+
+
+/* display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         transition: .5s ease-in-out;
         z-index: 1;
     } */
+
+
 /* } */
